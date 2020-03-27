@@ -1,0 +1,470 @@
+
+html{
+	font: menu;
+	font-weight: bold;
+	}
+body{
+	margin: 0;
+	padding: 0;
+}
+footer{
+	background: #3bc2b5;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	}
+li{
+	list-style-type: none;
+	margin-bottom: 7%;
+	}
+ul{
+	margin-left: 0;
+	padding-left: 0;	
+	}
+a{
+	text-decoration: none;
+	color: white;	
+	}
+h1{
+	text-align: left;
+}
+h2{
+	font-size: 3em;
+    font-family: Bebas Neue;
+}
+
+.padding_site{
+	padding: 1% 5%;
+	}
+.hdr{
+	background: white;
+	width: 100%;
+	height: auto;
+	}
+.first_hdr{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;	
+	}
+.searchblock{
+	padding-left:20%;
+	display: block;
+	margin: auto; 	
+	}
+.search_input{
+	width: 25em;	
+	}
+.price{
+	font-size: xx-large;
+	color: #74777f;
+	font-family: Bebas Neue;
+	}
+.menu{
+	background-color: #4ccfc1;
+	width: 90%;
+	height: auto;
+	padding: 2% 5%;
+	clear: both;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-evenly;
+	}
+.menu_list{
+	font-family: Bebas Neue;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 1%;
+    border-left: 1px solid white;
+    text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: All 0.3s ease;
+	-moz-user-select: -moz-none;
+	}
+.banner{
+	background: #3bc2b5;
+	width: 90%;
+	height: 35em;
+	}
+.banner_info{
+	width: 25em;
+    text-align: left;
+}
+.input_shownow{
+	color: white;
+    background: #3bc2b5;
+    width: 8em;
+    border: 3px solid white;
+	border-radius: 9px;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.5s ease;
+}
+
+.categories{
+	background: white;
+	width: 90%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	}
+.categ_block{
+	display: flex;
+	margin: 1%;
+	padding: 1%;
+	border-right: 1px solid #ccc;
+	font-family: Bebas Neue;
+	width: 25em;
+	}
+.categ_infoblock{
+	margin: auto;	
+	}
+.categ_block img{
+	height: 13em;
+	display: block;
+    margin: auto;
+	}
+.categ_block a{
+	color: #74777f;
+	display: block;
+	font-size: 2em;
+	}
+.fon_images{
+	width: 200px;
+	height: 150px;
+}
+.input_shop{
+	background: #3cc395;
+	border-radius: 5px;
+	width: 5em;
+	text-align: center;
+	color: white;
+	padding: 3%;
+	cursor: pointer;
+	-moz-user-select: -moz-none;
+	font-family: Bebas Neue;
+	font-size: 19px;
+	width: 3em;
+	-webkit-transition: All 0.2s ease;
+	-moz-transition: All 0.2s ease;
+	-o-transition: All 0.2s ease;
+	-ms-transition: All 0.2s ease;
+	transition: All 0.2s ease;
+	}
+.products{
+	background: white;
+	width: auto;
+	height: auto;
+	}
+.feat_prod{
+	width: 90%;
+	background: #3bc2b5;
+	color: white;
+	}
+.prod_shop{
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	}
+.prod_block{
+	padding: 3%;
+	border-bottom: 3px solid #3cc395;
+	width: 17em;
+	text-align: center;
+	margin: 1em;
+	font-family: Bebas Neue;
+	transition: All 0.2s ease;
+	}
+.prod_block img{
+	display: block;
+	margin: auto;
+	width: 130px;
+	height: 150px;
+	}
+.add-to-cart{
+	cursor: pointer;
+}
+.loop-add-to-cart{
+	cursor: pointer;
+}
+.prod_block h3{
+	color: #74777f;
+	font-size:2em;
+	}
+.prod_block a{
+	color: #74777f;
+	position: relative;
+	top: 2%;
+	font-size:2em;
+	}
+.input_buy{
+	margin: 5%;
+	padding: 5%;
+	background: #3cc395;
+	border-radius:5px;
+	color: white;
+	font-size:1.5em;
+	text-align: center;
+	display: inline;
+	cursor: pointer;
+	
+	-webkit-transition: All 0.2s ease;
+	-moz-transition: All 0.2s ease;
+	-o-transition: All 0.2s ease;
+	-ms-transition: All 0.2s ease;
+	transition: All 0.2s ease;
+	}
+.footer{
+	background: #3bc2b5;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	color: white;
+	border-bottom: 2em solid #2da89b;
+	}
+.footer h3{
+	font-family: Bebas Neue;
+	font-size: 2em;
+}
+.footer a {
+	font-family: Open Sans;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+.padding_footer{
+	width: 15em;
+	
+	padding: 1%;
+	margin:1%;
+	}
+	  .swiper-container {
+		width: 100%;
+		height: 100%;
+		cursor: grab;
+	  }
+	  .swiper-container:active{
+		  cursor: grabbing;
+	  }
+	  .swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #3bc2b5;
+		color: white;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	  }
+	
+li:hover{
+	background-color: #2da89b;	
+	}
+.input_shownow:hover{
+	color:#3bc2b5;
+	background: white;
+	
+	}
+.menu_list:first-child{
+	border: none;
+}
+.first_hdr img{
+	cursor: pointer;
+}
+.first_hdr img:hover{
+	filter: invert(1);
+	transition: All 0.5s ease;
+}
+.input_shop:hover{
+	background-color: #2da89b;	
+	box-shadow: 2px 2px 1px #060606;
+	}
+.input_buy:hover{
+	background-color: #2da89b;
+	box-shadow: 2px 2px 1px #060606;
+	}
+.prod_block:hover{
+	box-shadow: 0px 0px 10px #3cc395;
+}
+.menu_list:hover{
+	background-color: #2da89b;	
+	}
+.menu_list:active{
+	background-color: #24887e;	
+	transition: none;	
+}
+.input_shop:active{
+   box-shadow: -2px -2px 1px #060606;
+   color: #777;
+   background-color: #2c746b;
+   transition: none;
+	}
+.input_buy:active{
+	background-color: #2c746b;
+   box-shadow: -2px -2px 1px #060606;
+	color: #777;
+	transition: none;
+	}
+.menu_list, .input_shop , .input_buy, .input_shownow{
+	-ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+}
+
+@media (max-width: 1050px){
+	.menu_list{
+	width: 16em;		
+		}
+	.menu_list:nth-child(odd){
+		border: none;
+		}
+	}
+@media (max-width: 815px){
+	.menu{
+	flex-direction: column;		
+		}
+	.menu_list{
+		width: auto;
+		border:none;		
+		}
+	.banner{
+		display: none;
+		}
+	}
+	
+.swiper-pagination-bullet{
+	background: white;
+opacity: 1;
+}
+.swiper-pagination-bullet-active{
+	opacity: 0.51;
+}
+.swiper-slide h1{
+	font-family: Bebas Neue;
+	font-size: 3em;
+}
+.swiper-slide p{
+	font-weight: 300;
+    font-family: Open Sans;
+}
+
+.wrap {
+	position: relative;
+   }
+  .product-wrap {position: relative;}
+  .product-wrap:after {
+	content: '';
+	background: rgba(59, 194, 181, 0.5);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	opacity: 0;
+	transform: scale(.3);
+	transition: .3s ease-in-out;
+  }
+  .border:hover .product-wrap:after {
+	opacity: 1;
+	transform: scale(1);
+  }
+  .product-wrap a {
+	display: block;
+	text-decoration: none;
+  }
+  .product-wrap img {
+	display: block;
+  }
+  .loop-action {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	opacity: 0;
+	transform: translate(-50%, -50%);
+	transition: .3s ease-in-out;
+  }
+  .border:hover .loop-action {opacity: 1;}
+  .loop-action a {
+	text-decoration: none;
+	display: block;
+	border: 1px solid white;
+	white-space: nowrap;
+	text-transform: uppercase;
+	padding: .5em 1em;
+	font-size: 1.5em;
+	line-height: 1.6;
+	outline: none;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	min-width: 160px;
+	margin: 5px auto;
+	transition: .3s ease-in-out;
+  }
+  .loop-action a:after {
+	content: '';
+	position: absolute;
+	left: -220%;
+	top: -500%;
+	width: 140%;
+	height: 1000%;
+	transform: rotate(45deg);
+	background: white;
+	z-index: -1;
+	transition: .3s ease-in-out;
+  }
+  .loop-action a:hover {color: black;}
+  .loop-action a:hover:after {left: 0%;}
+  .border:hover {border-color: #4966A2;}
+  .product-info {padding-top: 15px;}
+
+.blockcentr {
+    width: 410px;
+    position: fixed;
+    left: 50%;
+    margin-left: -205px;
+    background: #f7f7f7;
+    padding: 15px;
+    line-height: 23px;
+    border-radius: 10px;
+    border: 1px solid #A5A5A5;
+    z-index: 999992;
+    top: 250px;
+}
+.blockall {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	background: #000;
+	cursor: pointer;
+	z-index: 999990;
+}
+#categ_shoesimg{
+	width: 200px;
+}
