@@ -12,6 +12,7 @@ function get_produts(){
     for ($i=0;$i<=$result->field_count;$i++){
         $products[] = $result->fetch_assoc();
     }
+    $link->close();
     return $products;
 
 }
