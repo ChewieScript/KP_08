@@ -1,4 +1,5 @@
-<?php include ("./header.php")?>
+<?php include ("./header.php");
+include ('functions.php');?>
 <div class="BANNER padding_site">
     <div class="swiper-container">
         <div class="swiper-wrapper">
