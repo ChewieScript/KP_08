@@ -468,3 +468,6 @@ opacity: 1;
 #categ_shoesimg{
 	width: 200px;
 }
+.product_info{
+	display: none;
+}
