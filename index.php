@@ -54,24 +54,40 @@ $produts = get_produts();?>
         <h2>FEATURED PRODUCTS</h2>
     </div>
     <div class="prod_shop padding_site">
-        <?php foreach ($produts as $product){ ?>
-        <div class="prod_block">
-            <div class="border">
-                <div class="wrap">
-                    <div class="product-wrap">
+        <?php foreach ($produts as $product){
+            if($product['featured'] === 'Y'){?>
+                <div class="prod_block">
+                    <div class="border">
+                        <div class="wrap">
+                            <div class="product-wrap">
+                                <img src="<?= $product['img_path'] ?>" alt="" >
+                            </div>
+                            <div class="loop-action">
+                                <a class="add-to-cart <?= 'product'.$product['ID'] ?>" >QUICK VIEW</a>
+                                <a class="loop-add-to-cart">BUY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3><?= $product['name'] ?></h3>
+                    <a>$<?= $product['cost'] ?></a>
+                    <div class="input_buy">BUY NOW</div>
+
+                </div>
+
+                <div class="blockcentr product_info <?= 'product'.$product['ID'] ?>" >
+                    <div class="img_wrap">
                         <img src="<?= $product['img_path'] ?>" alt="" >
                     </div>
-                    <div class="loop-action">
-                        <a class="add-to-cart" onclick="modal(this)">QUICK VIEW</a>
-                        <a class="loop-add-to-cart">BUY</a>
+                    <div>
+                        <ul>
+                            <li>Gender: <?= $product['gender'] ?></li>
+                            <li>qewqwe</li>
+                            <li>qewqwe</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <h3><?= $product['name'] ?></h3>
-            <a>$<?= $product['cost'] ?></a>
-            <div class="input_buy">BUY NOW</div>
 
-        </div>
+                <?php } ?>
         <?php } ?>
     </div>
 

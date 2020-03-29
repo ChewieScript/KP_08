@@ -27,21 +27,13 @@ let swiper = new Swiper('.swiper-container', {
     },
   })});
 
-$(document).ready(function(){
+$('.add-to-cart').on('click',function (e) {
+    jQuery('.'+e.target.classList[1]).css('display','block');
+    $(".tytoknoall").append('<div class="blockall"></div>');
+    $('.blockall').on('click',function (e) {
+        console.log(2);
+        $('.blockall').remove();
+        $('.blockcentr').css('display','none');
 
-    $(".tytoknoall").click(function(){
-    $(".blockcentr").slideToggle("2000");
-    $(".blockall").remove();
-  });
-})
-function modal(n){
-  let img=$('.product-wrap img');
-  let arr=$('.add-to-cart');
-  console.log(arr.index(n));
-  $(".blockcentr").slideToggle("2000");
-  $('.blockcentr img').attr('src',img[arr.index(n)].src);
-  if($("div").hasClass("blockall"))
-  $(".blockall").remove();
-  else
-  $(".tytoknoall").append('<div class="blockall"></div>');
-};
+    });
+});
