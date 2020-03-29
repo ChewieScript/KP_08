@@ -1,5 +1,6 @@
 <?php include ("./header.php");
-include ('functions.php');?>
+include ('functions.php');
+$produts = get_produts();?>
 <div class="BANNER padding_site">
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -53,11 +54,12 @@ include ('functions.php');?>
         <h2>FEATURED PRODUCTS</h2>
     </div>
     <div class="prod_shop padding_site">
+        <?php foreach ($produts as $product){ ?>
         <div class="prod_block">
             <div class="border">
                 <div class="wrap">
                     <div class="product-wrap">
-                        <img src="images/product1.png" alt="" >
+                        <img src="<?= $product['img_path'] ?>" alt="" >
                     </div>
                     <div class="loop-action">
                         <a class="add-to-cart" onclick="modal(this)">QUICK VIEW</a>
@@ -65,103 +67,12 @@ include ('functions.php');?>
                     </div>
                 </div>
             </div>
-            <h3>BRANDED SHOE</h3>
-            <a>$300</a>
+            <h3><?= $product['name'] ?></h3>
+            <a>$<?= $product['cost'] ?></a>
             <div class="input_buy">BUY NOW</div>
 
         </div>
-        <div class="prod_block">
-            <div class="border">
-                <div class="wrap">
-                    <div class="product-wrap">
-                        <img src="images/product2.png" alt="" >
-                    </div>
-                    <div class="loop-action">
-                        <a  class="add-to-cart" onclick="modal(this)">QUICK VIEW</a>
-                        <a  class="loop-add-to-cart">BUY</a>
-                    </div>
-
-
-                    <div class="blockcentr" style="display: none">
-                        <img src="images/product2.png" alt="">
-                        <p>DFJSKJFS</p>
-                        <ol>
-                            <li>sdfksk:fjeijwofij</li>
-                            <li>kijeifj:fmwoejn</li>
-                        </ol>
-                    </div>
-                </div>
-
-
-            </div>
-            <h3>BRANDED TSHIRTS</h3>
-            <a>$300</a>
-            <div class="input_buy">BUY NOW</div>
-        </div>
-        <div class="prod_block">
-            <div class="border">
-                <div class="wrap">
-                    <div class="product-wrap">
-                        <img src="images/product3.png" alt="" >
-                    </div>
-                    <div class="loop-action">
-                        <a class="add-to-cart" onclick="modal(this)">QUICK VIEW</a>
-                        <a  class="loop-add-to-cart">BUY</a>
-                    </div>
-                </div>
-            </div>
-            <h3>BRANDED TSHIRTS</h3>
-            <a>$300</a>
-            <div class="input_buy">BUY NOW</div>
-        </div>
-        <div class="prod_block">
-            <div class="border">
-                <div class="wrap">
-                    <div class="product-wrap">
-                        <img src="images/product4.png" alt="" >
-                    </div>
-                    <div class="loop-action">
-                        <a class="add-to-cart" onclick="modal(this)">QUICK VIEW</a>
-                        <a class="loop-add-to-cart">BUY</a>
-                    </div>
-                </div>
-            </div>
-            <h3>BRANDED SHOE</h3>
-            <a>$300</a>
-            <div class="input_buy">BUY NOW</div>
-        </div>
-        <div class="prod_block">
-            <div class="border">
-                <div class="wrap">
-                    <div class="product-wrap">
-                        <img src="images/product5.png" alt="" >
-                    </div>
-                    <div class="loop-action">
-                        <a class="add-to-cart" onclick="modal(this)">QUICK VIEW</a>
-                        <a class="loop-add-to-cart">BUY</a>
-                    </div>
-                </div>
-            </div>
-            <h3>EMS WOMEN BAG</h3>
-            <a>$300</a>
-            <div class="input_buy">BUY NOW</div>
-        </div>
-        <div class="prod_block">
-            <div class="border">
-                <div class="wrap">
-                    <div class="product-wrap">
-                        <img src="images/categories3.png" alt="" >
-                    </div>
-                    <div class="loop-action">
-                        <a class="add-to-cart" onclick="modal(this)">QUICK VIEW</a>
-                        <a class="loop-add-to-cart">BUY</a>
-                    </div>
-                </div>
-            </div>
-            <h3>BRANDED CARGOS</h3>
-            <a>$300</a>
-            <div class="input_buy">BUY NOW</div>
-        </div>
+        <?php } ?>
     </div>
 
     <div class="tytoknoall"></div>
