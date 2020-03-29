@@ -9,7 +9,7 @@ function get_produts(){
     mysqli_query($link,"SET SESSION collation_connection = 'utf8_general_ci'");
     $result = $link->query('SELECT * FROM `products`');
     $products = array();
-    for ($i=0;$i<=$result->field_count;$i++){
+    for ($i=0;$i<$result->field_count;$i++){
         $products[] = $result->fetch_assoc();
     }
     $link->close();
