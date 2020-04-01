@@ -1,6 +1,6 @@
 <?php include ("./header.php");
 include ('functions.php');
-$produts = get_produts();?>
+$produts = get_produts(); ?>
 <div class="BANNER padding_site">
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -70,7 +70,7 @@ $produts = get_produts();?>
                     </div>
                     <h3><?= $product['name'] ?></h3>
                     <a>$<?= $product['cost'] ?></a>
-                    <div class="input_buy">BUY NOW</div>
+                    <div class="input_buy" onclick="send_to_cart(<?= $product['ID'] ?>,'<?= $product['name'] ?>',<?= $product['cost'] ?>)">BUY NOW</div>
 
                 </div>
 

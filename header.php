@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <html lang="en">
 <head>
     <meta charset='utf-8'>
@@ -16,14 +17,18 @@
     <div class="hdr">
         <div class="first_hdr padding_site">
             <div >
-                <img src="images/logo.png" alt="" >
+                <a href="/">
+                    <img src="images/logo.png" alt="" >
+                </a>
+
             </div>
             <div class="searchblock">
 
                 <img src="images/search.png" alt="" >
             </div>
             <div class="">
-                <img src="images/Shape.png" alt="" > <a class="price">$0</a>
+                <a href="/cart.php"><img src="images/Shape.png" alt="" > <a class="price">$<?= $_SESSION['total_cost']?$_SESSION['total_cost']:0 ?></a></a>
+
             </div>
         </div>
         <div class="menu padding_site">
