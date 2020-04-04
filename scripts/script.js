@@ -42,6 +42,9 @@ function send_to_cart(id,name,cost) {
     $.ajax({
         method:'POST',
         url:'../ajaxHandler/addToCart.php',
+        success: function(){
+          location.reload()
+        },
         data:{
             id:id,
             name:name,
@@ -60,3 +63,6 @@ function delete_in_cart(id) {
         location.reload();
     })
 }
+$('.input_cartproduct').on('change',function(a){
+  a.target.parentElement.nextElementSibling.innerHTML = a.target.parentElement.previousElementSibling.innerHTML *  a.target.value
+})
