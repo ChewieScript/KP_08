@@ -36,4 +36,27 @@ $('.add-to-cart').on('click',function (e) {
         $('.blockcentr').css('display','none');
 
     });
+
 });
+function send_to_cart(id,name,cost) {
+    $.ajax({
+        method:'POST',
+        url:'../ajaxHandler/addToCart.php',
+        data:{
+            id:id,
+            name:name,
+            cost:cost
+        }
+    })
+}
+function delete_in_cart(id) {
+    $.ajax({
+        method:'POST',
+        url:'../ajaxHandler/deleteInCart.php',
+        data:{
+            id:id,
+        }
+    }).done(function () {
+        location.reload();
+    })
+}
