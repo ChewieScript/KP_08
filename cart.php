@@ -12,12 +12,12 @@
             <th></th>
         </tr>
 
-            <?php foreach ($_SESSION['cart'] as $key => $value){ ?>
+        <?php foreach ($_SESSION['cart'] as $key => $value){ ?>
                 <tr>
-                    <td colspan="2"><?= $value[0] ?></td>
-                    <td><?= $value[1] ?></td>
+                    <td colspan="2" class="given_quantity"><?= $value[0] ?></td>
+                    <td class="profuct_price"><?= $value[1] ?></td>
                     <td><input class="input_cartproduct" placeholder="<?= $value[2] ?>"></td>
-                    <td><?= $value[1]*$value[2] ?></td>
+                    <td class="product_total"><?= $value[1]*$value[2] ?></td>
                     <td class="delete_product" onclick="delete_in_cart(<?= $key ?>) ">delete</td>
                 </tr>
             <?php } ?>
