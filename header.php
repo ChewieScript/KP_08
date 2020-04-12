@@ -32,16 +32,16 @@
             </div>
         </div>
         <div class="menu padding_site">
-            <div class="menu_list">HOME</div>
-            <div class="menu_list">SALE</div>
-            <div class="menu_list">HANDBAGS</div>
-            <div class="menu_list">WALLETS</div>
-            <div class="menu_list">ACCESSORIES</div>
-            <div class="menu_list">MENS STORE</div>
-            <div class="menu_list">SHOES</div>
-            <div class="menu_list">VINTAGE</div>
-            <div class="menu_list">SERVICE</div>
-            <div class="menu_list">CONTACT US</div>
+            <a href="/" class="menu_list">HOME</a>
+            <a href="sale.php" class="menu_list">SALE</a>
+            <a href="filter.php?category=handbags" class="menu_list">HANDBAGS</a>
+            <a href="filter.php?category=wallets" class="menu_list">WALLETS</a>
+            <a href="filter.php?category=accessories" class="menu_list">ACCESSORIES</a>
+            <a href="filter.php?category=men" class="menu_list">MENS STORE</a>
+            <a href="filter.php?category=shoes" class="menu_list">SHOES</a>
+            <a href="filter.php?category=vintage" class="menu_list">VINTAGE</a>
+            <a class="menu_list">SERVICE</a>
+            <a class="menu_list">CONTACT US</a>
 
         </div>
     </div>
