@@ -66,3 +66,30 @@ function delete_in_cart(id) {
 $('.input_cartproduct').on('change',function(a){
   a.target.parentElement.nextElementSibling.innerHTML = a.target.parentElement.previousElementSibling.innerHTML *  a.target.value
 })
+$('#orderDetailForm').on('submit',function (e) {
+    e.preventDefault();
+    let snp = $('#SNP').val(),
+        email = $('#email').val(),
+        phone = $('#phone').val(),
+        city = $('#city').val(),
+        addr = $('#addr').val(),
+        data = $('#data').val()
+    if(snp && email && phone && city && addr && data){
+        $.ajax({
+            type: 'POST',
+            url: './ajaxHandler/createOrder.php',
+            data:{
+                snp:snp,
+                email:email,
+                phone:phone,
+                city:city,
+                addr:addr,
+                data:data
+            }
+        }).done(function (msg) {
+            if (msg.find('OK')){
+                location.href('./orderSuccess.php')
+            }
+        })
+    }
+})

@@ -28,7 +28,7 @@
 </div>
 <div class="total padding_site">
     For payment : <?= $_SESSION['total_cost'] ?>$
-    <div class="cart_buy">BUY NOW</div>
+    <a href="<?= $_SESSION['cart']&&isset($_SESSION['cart'])?'/twoOrderStep.php':'./' ?>" class="cart_buy">BUY NOW</a>
 </div>
 <?php }else{ ?>
     <div class="total padding_site">Cart is empty</div>
